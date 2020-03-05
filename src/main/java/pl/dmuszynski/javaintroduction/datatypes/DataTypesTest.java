@@ -23,7 +23,20 @@ public class DataTypesTest {
     private Double h1 = 6d;
 
     private void testBooleanDataTypes() {
-
+        System.out.println(a == false); // true
+        System.out.println(a != false); // false
+        System.out.println(!a); // true
+        System.out.println(!a ? true : false); // true
+        System.out.println(a && false); // false
+        System.out.println(a || false); // false
+        System.out.println(a ^ true); // true
+        System.out.println(a | true); // true
+        System.out.println(a1 == a); // true
+        System.out.println(a1.equals(a)); // true
+        System.out.println(a1.compareTo(a)); // 0
+        System.out.println(a1 == new Boolean(false)); // false
+        System.out.println(a1.equals(new Boolean(false))); // true
+        System.out.println(a1.compareTo(new Boolean(false))); // 0
     }
 
     private void testCharDataTypes() {
