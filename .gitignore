@@ -1,5 +1,7 @@
-# Design Patterns .gitigonre
+# Java-introduction .gitignore
 .idea
 java-introduction.iml
 target
 
+# Exceptions
+/exceptions/exceptions.iml
