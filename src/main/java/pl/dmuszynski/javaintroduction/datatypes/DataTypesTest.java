@@ -23,24 +23,42 @@ public class DataTypesTest {
     private Double h1 = 6d;
 
     private void testBooleanDataTypes() {
-        System.out.println(a == false); // true
-        System.out.println(a != false); // false
-        System.out.println(!a); // true
-        System.out.println(!a ? true : false); // true
-        System.out.println(a && false); // false
-        System.out.println(a || false); // false
-        System.out.println(a ^ true); // true
-        System.out.println(a | true); // true
-        System.out.println(a1 == a); // true
-        System.out.println(a1.equals(a)); // true
-        System.out.println(a1.compareTo(a)); // 0
-        System.out.println(a1 == new Boolean(false)); // false
-        System.out.println(a1.equals(new Boolean(false))); // true
-        System.out.println(a1.compareTo(new Boolean(false))); // 0
+        System.out.println("(a == false) : " + (a == false)); // true
+        System.out.println("(a != false) : " + (a != false)); // false
+        System.out.println("!a : " + (!a)); // true
+        System.out.println("(!a ? true : false) : " + (!a ? true : false)); // true
+        System.out.println("(a && false) : " + (a && false)); // false
+        System.out.println("(a || false) : " + (a || false)); // false
+        System.out.println("(a & false) : " + (a & false)); // false
+        System.out.println("(a ^ true) : " + (a ^ true)); // true
+        System.out.println("(a | true) : " + (a | true)); // true
+        System.out.println("(a1 == a) : " + (a1 == a)); // true
+        System.out.println("(a1.equals(a)) : " + (a1.equals(a))); // true
+        System.out.println("(a1.compareTo(a)) : " + (a1.compareTo(a))); // 0
+        System.out.println("(a1 == new Boolean(false)) : " + (a1 == new Boolean(false))); // false
+        System.out.println("(a1.equals(new Boolean(false))) : " + (a1.equals(new Boolean(false)))); // true
+        System.out.println("(a1.compareTo(new Boolean(false))) : " + (a1.compareTo(new Boolean(false)))); // 0
     }
 
     private void testCharDataTypes() {
-
+        System.out.println("(b == 'a') : " + (b == 'a')); // false
+        System.out.println("(b != 'b') : " + (b != 'b')); // false
+        System.out.println("(b >= 'b') : " + (b >= 'b')); // true
+        System.out.println("(b < 'b') : " + (b < 'b'));  // false
+        System.out.println("b : " + b); // b
+        System.out.println("(b + 0) : " + (b + 0)); // 98
+        System.out.println("(b | 4) : " + (b | 4)); // 102
+        System.out.println("(b & 2) : " + (b & 2)); // 2
+        System.out.println("(b ^ 8) : " + (b ^ 8)); // 106
+        System.out.println("(++b) : " + (++b)); // c
+        System.out.println("(--b) : " + (--b)); // a
+        System.out.println("(b++) : " + (b++)); // b
+        System.out.println("(b1 == 'b') : " + (b1 == 'b')); // true
+        System.out.println("(b1.equals('b')) : " + (b1.equals('b'))); // true
+        System.out.println("(b1.compareTo('e')) : " + (b1.compareTo('e'))); // -3
+        System.out.println("(b1 == new Character('b')) : " + (b1 == new Character('b'))); // false
+        System.out.println("(b1.equals(new Character('b'))) : " + (b1.equals(new Character('b')))); // true
+        System.out.println("(b1.compareTo(new Character('f'))) : " + (b1.compareTo(new Character('f')))); // -4
     }
 
     private void testByteDataTypes() {
