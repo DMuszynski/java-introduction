@@ -2,6 +2,7 @@
 .idea
 java-introduction.iml
 target
+out
 
 # Exceptions
 /exceptions/exceptions.iml
